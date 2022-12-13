@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cupful - Demo</title>
+  <link rel="icon" type="image/png" href="../logo.png">
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <style>
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .container {
+      max-width: 960px;
+    }
+
+    .site-header {
+      background-color: rgba(0, 0, 0, .85);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .site-header a:hover {
+      opacity: 0.8;
+    }
+
+    .flex-equal>* {
+      flex: 1;
+    }
+
+    @media (min-width: 768px) {
+      .flex-md-equal>* {
+        flex: 1;
+      }
+    }
+
+    .stage>.text>* {
+      margin-top: 10px;
+    }
+
+    h3 {
+      font-weight: 900;
+    }
+
+    footer {
+      max-width: 100%;
+      overflow: hidden;
+      background-color: #EEE;
+      color: rgba(0, 0, 0, .5);
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header class="site-header sticky-top py-1">
+    <nav class="container d-flex flex-column flex-md-row justify-content-center">
+      <a class="py-3" href="" aria-label="Home">
+        <img style="width: 90px;" src="../logo.png" alt="Logo" />
+      </a>
+    </nav>
+  </header>
+  <div class="container d-flex flex-column justify-content-center py-5">
+    <h1>Zahlung erolgreich!</h1>
+    <small>Sie werden automatisch zur Startseite weitergeleitet...</small>
+  </div>
+  <footer class="py-4 mt-auto">
+    <div class="row">
+      <div class="container text-center my-4">
+        <small class="d-block">&copy;2022 CUPFUL Prototyp</small>
+        <small class="d-block">Diese Seite dient ausschließlich als Prototyp und zur Demonstration.</small>
+        <small class="d-block">Die Website bietet keinen regulären Funktionsumfang.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="../bootstrap.bundle.min.js"></script>
+  <script>
+    window.setTimeout(() => {
+      window.location.href = "/";
+    }, 3000);
+  </script>
+</body>
+
+</html>
